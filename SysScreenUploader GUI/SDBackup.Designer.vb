@@ -24,6 +24,8 @@ Partial Class SDBackup
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SDBackup))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.DestinationPath = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -39,14 +41,13 @@ Partial Class SDBackup
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.DestinationPath = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox2
         '
+        Me.GroupBox2.BackColor = System.Drawing.Color.AntiqueWhite
         Me.GroupBox2.Controls.Add(Me.Label9)
         Me.GroupBox2.Controls.Add(Me.DestinationPath)
         Me.GroupBox2.Controls.Add(Me.Label6)
@@ -66,6 +67,23 @@ Partial Class SDBackup
         Me.GroupBox2.TabIndex = 12
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "2) Making SD Backup"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(11, 55)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(179, 17)
+        Me.Label9.TabIndex = 30
+        Me.Label9.Text = "Where to Copy your Files ?"
+        '
+        'DestinationPath
+        '
+        Me.DestinationPath.Location = New System.Drawing.Point(196, 55)
+        Me.DestinationPath.Name = "DestinationPath"
+        Me.DestinationPath.Size = New System.Drawing.Size(533, 22)
+        Me.DestinationPath.TabIndex = 29
+        Me.DestinationPath.Text = "D:\Nintendo Switch Album Backup"
         '
         'Label6
         '
@@ -212,23 +230,6 @@ Partial Class SDBackup
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 21
         Me.PictureBox1.TabStop = False
-        '
-        'DestinationPath
-        '
-        Me.DestinationPath.Location = New System.Drawing.Point(196, 55)
-        Me.DestinationPath.Name = "DestinationPath"
-        Me.DestinationPath.Size = New System.Drawing.Size(533, 22)
-        Me.DestinationPath.TabIndex = 29
-        Me.DestinationPath.Text = "D:\Nintendo Switch Album Backup"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(11, 55)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(179, 17)
-        Me.Label9.TabIndex = 30
-        Me.Label9.Text = "Where to Copy your Files ?"
         '
         'SDBackup
         '
