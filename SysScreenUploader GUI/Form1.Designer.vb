@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form remplace la méthode Dispose pour nettoyer la liste des composants.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,12 +20,13 @@ Partial Class Form1
     'REMARQUE : la procédure suivante est requise par le Concepteur Windows Form
     'Elle peut être modifiée à l'aide du Concepteur Windows Form.  
     'Ne la modifiez pas à l'aide de l'éditeur de code.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.ExecuteButton = New System.Windows.Forms.Button()
         Me.ListBox3 = New System.Windows.Forms.ListBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
@@ -37,6 +38,8 @@ Partial Class Form1
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -47,6 +50,7 @@ Partial Class Form1
         Me.ConfigFilePath = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
+        Me.FolderBrowserDialog1 = New System.Windows.Forms.FolderBrowserDialog()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -64,7 +68,8 @@ Partial Class Form1
         '
         'GroupBox1
         '
-        Me.GroupBox1.BackColor = System.Drawing.Color.Thistle
+        Me.GroupBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(185, Byte), Integer))
+        Me.GroupBox1.Controls.Add(Me.Label11)
         Me.GroupBox1.Controls.Add(Me.ExecuteButton)
         Me.GroupBox1.Controls.Add(Me.ListBox3)
         Me.GroupBox1.Controls.Add(Me.TextBox3)
@@ -79,9 +84,19 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Launching Server"
         '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(153, 106)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(181, 17)
+        Me.Label11.TabIndex = 29
+        Me.Label11.Text = "Files will NOT be sorted"
+        '
         'ExecuteButton
         '
-        Me.ExecuteButton.Location = New System.Drawing.Point(255, 283)
+        Me.ExecuteButton.Location = New System.Drawing.Point(352, 305)
         Me.ExecuteButton.Name = "ExecuteButton"
         Me.ExecuteButton.Size = New System.Drawing.Size(111, 45)
         Me.ExecuteButton.TabIndex = 22
@@ -92,7 +107,7 @@ Partial Class Form1
         '
         Me.ListBox3.FormattingEnabled = True
         Me.ListBox3.ItemHeight = 16
-        Me.ListBox3.Location = New System.Drawing.Point(9, 132)
+        Me.ListBox3.Location = New System.Drawing.Point(9, 154)
         Me.ListBox3.Name = "ListBox3"
         Me.ListBox3.Size = New System.Drawing.Size(125, 196)
         Me.ListBox3.TabIndex = 13
@@ -100,7 +115,7 @@ Partial Class Form1
         'TextBox3
         '
         Me.TextBox3.BackColor = System.Drawing.SystemColors.InactiveCaption
-        Me.TextBox3.Location = New System.Drawing.Point(140, 132)
+        Me.TextBox3.Location = New System.Drawing.Point(140, 154)
         Me.TextBox3.Multiline = True
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.ReadOnly = True
@@ -110,7 +125,7 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(6, 112)
+        Me.Label3.Location = New System.Drawing.Point(6, 134)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(216, 17)
         Me.Label3.TabIndex = 8
@@ -136,9 +151,9 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(410, 26)
+        Me.Button1.Location = New System.Drawing.Point(401, 18)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(84, 31)
         Me.Button1.TabIndex = 3
         Me.Button1.Text = "Browse"
         Me.Button1.UseVisualStyleBackColor = True
@@ -178,7 +193,9 @@ Partial Class Form1
         '
         'GroupBox2
         '
-        Me.GroupBox2.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.GroupBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(150, Byte), Integer), CType(CType(251, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.GroupBox2.Controls.Add(Me.Label13)
+        Me.GroupBox2.Controls.Add(Me.Label12)
         Me.GroupBox2.Controls.Add(Me.Label10)
         Me.GroupBox2.Controls.Add(Me.Label9)
         Me.GroupBox2.Controls.Add(Me.Button2)
@@ -195,10 +212,30 @@ Partial Class Form1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Editing the ConfigFile"
         '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(6, 336)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(279, 17)
+        Me.Label13.TabIndex = 27
+        Me.Label13.Text = "Config.ini will only be applied on boot"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(41, 144)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(311, 17)
+        Me.Label12.TabIndex = 26
+        Me.Label12.Text = "If you want to auto-replace it by this tool :"
+        '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(3, 217)
+        Me.Label10.Location = New System.Drawing.Point(10, 174)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(377, 17)
         Me.Label10.TabIndex = 25
@@ -208,25 +245,25 @@ Partial Class Form1
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(44, 190)
+        Me.Label9.Location = New System.Drawing.Point(6, 319)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(263, 17)
+        Me.Label9.Size = New System.Drawing.Size(278, 17)
         Me.Label9.TabIndex = 24
-        Me.Label9.Text = "If you want to replace it by this tool"
+        Me.Label9.Text = "Also, config.ini can't apply on the go."
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(142, 283)
+        Me.Button2.Location = New System.Drawing.Point(123, 241)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(111, 45)
+        Me.Button2.Size = New System.Drawing.Size(141, 45)
         Me.Button2.TabIndex = 23
-        Me.Button2.Text = "Replace URL"
+        Me.Button2.Text = "Replace URL in .txt"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(17, 103)
+        Me.Label8.Location = New System.Drawing.Point(17, 86)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(56, 17)
         Me.Label8.TabIndex = 11
@@ -235,7 +272,7 @@ Partial Class Form1
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(17, 55)
+        Me.Label7.Location = New System.Drawing.Point(17, 38)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(107, 17)
         Me.Label7.TabIndex = 10
@@ -243,7 +280,7 @@ Partial Class Form1
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(6, 75)
+        Me.TextBox2.Location = New System.Drawing.Point(6, 58)
         Me.TextBox2.Multiline = True
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.ReadOnly = True
@@ -254,7 +291,7 @@ Partial Class Form1
         'lineedited
         '
         Me.lineedited.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lineedited.Location = New System.Drawing.Point(6, 123)
+        Me.lineedited.Location = New System.Drawing.Point(6, 106)
         Me.lineedited.Multiline = True
         Me.lineedited.Name = "lineedited"
         Me.lineedited.ReadOnly = True
@@ -263,19 +300,20 @@ Partial Class Form1
         '
         'ConfigFilePath
         '
-        Me.ConfigFilePath.Location = New System.Drawing.Point(6, 237)
+        Me.ConfigFilePath.Location = New System.Drawing.Point(6, 194)
         Me.ConfigFilePath.Multiline = True
         Me.ConfigFilePath.Name = "ConfigFilePath"
-        Me.ConfigFilePath.Size = New System.Drawing.Size(381, 25)
+        Me.ConfigFilePath.Size = New System.Drawing.Size(380, 25)
         Me.ConfigFilePath.TabIndex = 7
         Me.ConfigFilePath.Text = "X:\config\sys-screenuploader\config.ini"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(17, 26)
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(6, 18)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(325, 17)
+        Me.Label6.Size = New System.Drawing.Size(378, 17)
         Me.Label6.TabIndex = 6
         Me.Label6.Text = "Don't forget to edit your config file in your SD Card" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
@@ -331,4 +369,8 @@ Partial Class Form1
     Friend WithEvents Label9 As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents NotifyIcon1 As NotifyIcon
+    Friend WithEvents Label11 As Label
+    Friend WithEvents FolderBrowserDialog1 As FolderBrowserDialog
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Label12 As Label
 End Class

@@ -1,8 +1,8 @@
 ﻿Imports System
 Imports System.IO
-Public Class SDBackup
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
 
+Public Class SDBackup
+    Sub ImportAllFiles()
         'Erase listboxes
         ListBox1.Items.Clear()
         ListBox2.Items.Clear()
@@ -35,9 +35,7 @@ Public Class SDBackup
         CreateGameFolder.Visible = True
         Label6.Visible = True
         Button4.Visible = True
-
     End Sub
-
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Dim i As Integer
 
@@ -128,5 +126,40 @@ Public Class SDBackup
         _filename = path.Split(sep).Last()
         Return _filename
     End Function
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If (FolderBrowserDialog1.ShowDialog() = DialogResult.OK) Then
+            AlbumFolder.Text = FolderBrowserDialog1.SelectedPath & "\"
+        End If
+
+        Call ImportAllFiles()
+    End Sub
+
+    Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox1.SelectedIndexChanged
+        PreviewJPG.Image = Image.FromFile(ListBox1.Text)
+        PreviewJPG.SizeMode = PictureBoxSizeMode.Zoom
+    End Sub
+
+    Private Sub PreviewJPG_Click(sender As Object, e As EventArgs) Handles PreviewJPG.Click
+        Dim photolink As String = ListBox1.Text
+        Process.Start(photolink)
+    End Sub
+
+    Private Sub ListBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox2.SelectedIndexChanged
+        Dim videolink As String = ListBox2.Text
+
+        PreviewMP4.URL = videolink
+        PreviewMP4.settings.autoStart = True
+
+    End Sub
+
+    Private Sub SDBackup_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'Prevent Resizing
+        'Set fixed border
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
+
+        'Disable the minimize box And the maximize box
+        Me.MaximizeBox = False
+    End Sub
 End Class
 
