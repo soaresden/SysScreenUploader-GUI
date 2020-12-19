@@ -1,4 +1,5 @@
 ﻿Imports System
+Imports System.ComponentModel
 Imports System.IO
 
 Public Class SDBackup
@@ -149,6 +150,7 @@ Public Class SDBackup
         Dim videolink As String = ListBox2.Text
 
         PreviewMP4.URL = videolink
+
         PreviewMP4.settings.autoStart = True
 
     End Sub
@@ -157,9 +159,14 @@ Public Class SDBackup
         'Prevent Resizing
         'Set fixed border
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
-
+        PreviewMP4.URL = ("")
         'Disable the minimize box And the maximize box
         Me.MaximizeBox = False
+    End Sub
+    Private Sub AlbumFolder_KeyDown(sender As Object, e As KeyEventArgs) Handles AlbumFolder.KeyDown
+        If e.KeyValue = Keys.Enter Then
+            Call ImportAllFiles()
+        End If
     End Sub
 End Class
 
