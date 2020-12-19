@@ -59,9 +59,10 @@ Partial Class Form1
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(9, 10)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(193, 115)
+        Me.PictureBox1.Size = New System.Drawing.Size(145, 93)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -77,9 +78,11 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.outputfolder)
         Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 133)
+        Me.GroupBox1.Location = New System.Drawing.Point(9, 108)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(491, 356)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(368, 289)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Launching Server"
@@ -88,17 +91,19 @@ Partial Class Form1
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(153, 106)
+        Me.Label11.Location = New System.Drawing.Point(115, 86)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(181, 17)
+        Me.Label11.Size = New System.Drawing.Size(142, 13)
         Me.Label11.TabIndex = 29
         Me.Label11.Text = "Files will NOT be sorted"
         '
         'ExecuteButton
         '
-        Me.ExecuteButton.Location = New System.Drawing.Point(352, 305)
+        Me.ExecuteButton.Location = New System.Drawing.Point(264, 248)
+        Me.ExecuteButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ExecuteButton.Name = "ExecuteButton"
-        Me.ExecuteButton.Size = New System.Drawing.Size(111, 45)
+        Me.ExecuteButton.Size = New System.Drawing.Size(83, 37)
         Me.ExecuteButton.TabIndex = 22
         Me.ExecuteButton.Text = "Launch Server"
         Me.ExecuteButton.UseVisualStyleBackColor = True
@@ -106,54 +111,59 @@ Partial Class Form1
         'ListBox3
         '
         Me.ListBox3.FormattingEnabled = True
-        Me.ListBox3.ItemHeight = 16
-        Me.ListBox3.Location = New System.Drawing.Point(9, 154)
+        Me.ListBox3.Location = New System.Drawing.Point(7, 125)
+        Me.ListBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ListBox3.Name = "ListBox3"
-        Me.ListBox3.Size = New System.Drawing.Size(125, 196)
+        Me.ListBox3.Size = New System.Drawing.Size(95, 160)
         Me.ListBox3.TabIndex = 13
         '
         'TextBox3
         '
         Me.TextBox3.BackColor = System.Drawing.SystemColors.InactiveCaption
-        Me.TextBox3.Location = New System.Drawing.Point(140, 154)
+        Me.TextBox3.Location = New System.Drawing.Point(105, 125)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox3.Multiline = True
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.ReadOnly = True
-        Me.TextBox3.Size = New System.Drawing.Size(345, 145)
+        Me.TextBox3.Size = New System.Drawing.Size(260, 119)
         Me.TextBox3.TabIndex = 9
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(6, 134)
+        Me.Label3.Location = New System.Drawing.Point(4, 109)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(216, 17)
+        Me.Label3.Size = New System.Drawing.Size(165, 13)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Please Select Computer IP Below"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(6, 32)
+        Me.Label2.Location = New System.Drawing.Point(4, 26)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(295, 17)
+        Me.Label2.Size = New System.Drawing.Size(220, 13)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Please Type Below your full destination folder"
         '
         'outputfolder
         '
-        Me.outputfolder.Location = New System.Drawing.Point(9, 52)
+        Me.outputfolder.Location = New System.Drawing.Point(7, 42)
+        Me.outputfolder.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.outputfolder.Multiline = True
         Me.outputfolder.Name = "outputfolder"
-        Me.outputfolder.Size = New System.Drawing.Size(476, 51)
+        Me.outputfolder.Size = New System.Drawing.Size(358, 42)
         Me.outputfolder.TabIndex = 2
-        Me.outputfolder.Text = "D:\Nintendo Switch Album Backup"
+        Me.outputfolder.Text = "D:\Nintendo Switch Album Backup\Album"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(401, 18)
+        Me.Button1.Location = New System.Drawing.Point(301, 15)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(84, 31)
+        Me.Button1.Size = New System.Drawing.Size(63, 25)
         Me.Button1.TabIndex = 3
         Me.Button1.Text = "Browse"
         Me.Button1.UseVisualStyleBackColor = True
@@ -163,9 +173,10 @@ Partial Class Form1
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(521, -1)
+        Me.Label1.Location = New System.Drawing.Point(391, -1)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(374, 44)
+        Me.Label1.Size = New System.Drawing.Size(298, 36)
         Me.Label1.TabIndex = 15
         Me.Label1.Text = "SysScreenUploader"
         '
@@ -174,9 +185,10 @@ Partial Class Form1
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label4.Location = New System.Drawing.Point(670, 78)
+        Me.Label4.Location = New System.Drawing.Point(502, 63)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(219, 20)
+        Me.Label4.Size = New System.Drawing.Size(187, 17)
         Me.Label4.TabIndex = 20
         Me.Label4.Text = "Original Idea by Bakatrouble"
         '
@@ -185,9 +197,10 @@ Partial Class Form1
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label5.Location = New System.Drawing.Point(783, 98)
+        Me.Label5.Location = New System.Drawing.Point(587, 80)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(106, 15)
+        Me.Label5.Size = New System.Drawing.Size(93, 13)
         Me.Label5.TabIndex = 19
         Me.Label5.Text = "GUI by Soaresden"
         '
@@ -205,9 +218,11 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.lineedited)
         Me.GroupBox2.Controls.Add(Me.ConfigFilePath)
         Me.GroupBox2.Controls.Add(Me.Label6)
-        Me.GroupBox2.Location = New System.Drawing.Point(509, 133)
+        Me.GroupBox2.Location = New System.Drawing.Point(382, 108)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(393, 356)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox2.Size = New System.Drawing.Size(295, 289)
         Me.GroupBox2.TabIndex = 21
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Editing the ConfigFile"
@@ -216,9 +231,10 @@ Partial Class Form1
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(6, 336)
+        Me.Label13.Location = New System.Drawing.Point(4, 273)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(279, 17)
+        Me.Label13.Size = New System.Drawing.Size(219, 13)
         Me.Label13.TabIndex = 27
         Me.Label13.Text = "Config.ini will only be applied on boot"
         '
@@ -226,18 +242,20 @@ Partial Class Form1
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(41, 144)
+        Me.Label12.Location = New System.Drawing.Point(31, 117)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(311, 17)
+        Me.Label12.Size = New System.Drawing.Size(245, 13)
         Me.Label12.TabIndex = 26
         Me.Label12.Text = "If you want to auto-replace it by this tool :"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(10, 174)
+        Me.Label10.Location = New System.Drawing.Point(8, 141)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(377, 17)
+        Me.Label10.Size = New System.Drawing.Size(285, 13)
         Me.Label10.TabIndex = 25
         Me.Label10.Text = "Change the drive letter to your config file and hit ""Replace"""
         '
@@ -245,17 +263,19 @@ Partial Class Form1
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(6, 319)
+        Me.Label9.Location = New System.Drawing.Point(4, 259)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(278, 17)
+        Me.Label9.Size = New System.Drawing.Size(219, 13)
         Me.Label9.TabIndex = 24
         Me.Label9.Text = "Also, config.ini can't apply on the go."
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(123, 241)
+        Me.Button2.Location = New System.Drawing.Point(92, 196)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(141, 45)
+        Me.Button2.Size = New System.Drawing.Size(131, 37)
         Me.Button2.TabIndex = 23
         Me.Button2.Text = "Replace URL in .txt"
         Me.Button2.UseVisualStyleBackColor = True
@@ -263,47 +283,52 @@ Partial Class Form1
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(17, 86)
+        Me.Label8.Location = New System.Drawing.Point(13, 70)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(56, 17)
+        Me.Label8.Size = New System.Drawing.Size(43, 13)
         Me.Label8.TabIndex = 11
         Me.Label8.Text = "Edit to :"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(17, 38)
+        Me.Label7.Location = New System.Drawing.Point(13, 31)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(107, 17)
+        Me.Label7.Size = New System.Drawing.Size(81, 13)
         Me.Label7.TabIndex = 10
         Me.Label7.Text = "The Line to edit"
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(6, 58)
+        Me.TextBox2.Location = New System.Drawing.Point(4, 47)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox2.Multiline = True
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.ReadOnly = True
-        Me.TextBox2.Size = New System.Drawing.Size(381, 25)
+        Me.TextBox2.Size = New System.Drawing.Size(287, 21)
         Me.TextBox2.TabIndex = 9
         Me.TextBox2.Text = """url = "" ..."
         '
         'lineedited
         '
         Me.lineedited.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lineedited.Location = New System.Drawing.Point(6, 106)
+        Me.lineedited.Location = New System.Drawing.Point(4, 86)
+        Me.lineedited.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.lineedited.Multiline = True
         Me.lineedited.Name = "lineedited"
         Me.lineedited.ReadOnly = True
-        Me.lineedited.Size = New System.Drawing.Size(381, 26)
+        Me.lineedited.Size = New System.Drawing.Size(287, 22)
         Me.lineedited.TabIndex = 8
         '
         'ConfigFilePath
         '
-        Me.ConfigFilePath.Location = New System.Drawing.Point(6, 194)
+        Me.ConfigFilePath.Location = New System.Drawing.Point(4, 158)
+        Me.ConfigFilePath.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ConfigFilePath.Multiline = True
         Me.ConfigFilePath.Name = "ConfigFilePath"
-        Me.ConfigFilePath.Size = New System.Drawing.Size(380, 25)
+        Me.ConfigFilePath.Size = New System.Drawing.Size(286, 21)
         Me.ConfigFilePath.TabIndex = 7
         Me.ConfigFilePath.Text = "X:\config\sys-screenuploader\config.ini"
         '
@@ -311,9 +336,10 @@ Partial Class Form1
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(6, 18)
+        Me.Label6.Location = New System.Drawing.Point(4, 15)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(378, 17)
+        Me.Label6.Size = New System.Drawing.Size(295, 13)
         Me.Label6.TabIndex = 6
         Me.Label6.Text = "Don't forget to edit your config file in your SD Card" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
@@ -324,16 +350,17 @@ Partial Class Form1
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(59, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(219, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(922, 497)
+        Me.ClientSize = New System.Drawing.Size(692, 404)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Form1"
         Me.Text = "Launching Server"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
