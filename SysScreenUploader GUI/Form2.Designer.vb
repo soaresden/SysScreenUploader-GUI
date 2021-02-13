@@ -77,12 +77,12 @@ Partial Class Form2
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(232, Byte), Integer), CType(CType(137, Byte), Integer))
-        Me.Button2.Location = New System.Drawing.Point(75, 188)
+        Me.Button2.Location = New System.Drawing.Point(75, 186)
         Me.Button2.Margin = New System.Windows.Forms.Padding(2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(192, 37)
+        Me.Button2.Size = New System.Drawing.Size(192, 26)
         Me.Button2.TabIndex = 16
-        Me.Button2.Text = "Make a SD Backup on your PC"
+        Me.Button2.Text = "Switch's SD --> PC Folder BACKUP"
         Me.Button2.UseVisualStyleBackColor = False
         '
         'Label2
@@ -149,12 +149,12 @@ Partial Class Form2
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(232, Byte), Integer), CType(CType(137, Byte), Integer))
-        Me.Button3.Location = New System.Drawing.Point(271, 188)
+        Me.Button3.Location = New System.Drawing.Point(75, 216)
         Me.Button3.Margin = New System.Windows.Forms.Padding(2)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(172, 37)
+        Me.Button3.Size = New System.Drawing.Size(192, 28)
         Me.Button3.TabIndex = 22
-        Me.Button3.Text = "Transfer Back to Your SD"
+        Me.Button3.Text = "PC Folder BACKUP --> Switch's SD"
         Me.Button3.UseVisualStyleBackColor = False
         '
         'Form2
