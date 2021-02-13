@@ -24,6 +24,7 @@ Partial Class SDBackup
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SDBackup))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.GameTitle = New System.Windows.Forms.TextBox()
         Me.GameIdGrid = New System.Windows.Forms.DataGridView()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.UseGameTitle = New System.Windows.Forms.CheckBox()
@@ -46,7 +47,8 @@ Partial Class SDBackup
         Me.Label3 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.FolderBrowserDialog1 = New System.Windows.Forms.FolderBrowserDialog()
-        Me.GameTitle = New System.Windows.Forms.TextBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         CType(Me.GameIdGrid, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PreviewMP4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -83,6 +85,13 @@ Partial Class SDBackup
         Me.GroupBox2.TabIndex = 12
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Making SD Backup"
+        '
+        'GameTitle
+        '
+        Me.GameTitle.Location = New System.Drawing.Point(242, 93)
+        Me.GameTitle.Name = "GameTitle"
+        Me.GameTitle.Size = New System.Drawing.Size(272, 20)
+        Me.GameTitle.TabIndex = 41
         '
         'GameIdGrid
         '
@@ -309,12 +318,26 @@ Partial Class SDBackup
         Me.PictureBox1.TabIndex = 21
         Me.PictureBox1.TabStop = False
         '
-        'GameTitle
+        'Button2
         '
-        Me.GameTitle.Location = New System.Drawing.Point(242, 93)
-        Me.GameTitle.Name = "GameTitle"
-        Me.GameTitle.Size = New System.Drawing.Size(272, 20)
-        Me.GameTitle.TabIndex = 41
+        Me.Button2.Location = New System.Drawing.Point(173, 78)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(238, 25)
+        Me.Button2.TabIndex = 42
+        Me.Button2.Text = "Mode : Backup Sorted Folder --> Switch"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(170, 54)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(241, 17)
+        Me.Label7.TabIndex = 43
+        Me.Label7.Text = "Current Mode  : Switch SD --> Sorted"
         '
         'SDBackup
         '
@@ -322,6 +345,8 @@ Partial Class SDBackup
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(232, Byte), Integer), CType(CType(137, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(752, 587)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label3)
@@ -365,4 +390,6 @@ Partial Class SDBackup
     Friend WithEvents GameIdGrid As DataGridView
     Friend WithEvents Label11 As Label
     Friend WithEvents GameTitle As TextBox
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Label7 As Label
 End Class

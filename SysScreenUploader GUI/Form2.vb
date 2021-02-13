@@ -6,6 +6,9 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         SDBackup.Show()
     End Sub
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        RecoverToSD.Show()
+    End Sub
 
     Private Sub NotifyIcon1_DoubleClick(ByVal sender As Object, ByVal e As System.EventArgs) Handles NotifyIcon1.DoubleClick
         'Me.Show()
@@ -37,4 +40,6 @@
         'Disable the minimize box And the maximize box
         Me.MaximizeBox = False
     End Sub
+
+
 End Class

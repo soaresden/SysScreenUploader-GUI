@@ -1,8 +1,7 @@
 ﻿Imports System
 Imports System.ComponentModel
 Imports System.IO
-
-Public Class SDBackup
+Public Class RecoverToSD
     Sub ImportAllFiles()
         'Erase listboxes
         ListBox1.Items.Clear()
@@ -10,15 +9,8 @@ Public Class SDBackup
         Dim i As Integer = 0
         Dim directory = AlbumFolder.Text
 
-        'Test if Album directory exists
-        If Not System.IO.Directory.Exists(AlbumFolder.Text & "\Album") Then
-            MsgBox("There is no Album Folder in this folder")
-            Exit Sub
-        End If
-
-
         'Searches directory and it's subdirectories for all files, with *
-        For Each filename As String In IO.Directory.GetFiles(directory & "\Album\", "*", IO.SearchOption.AllDirectories)
+        For Each filename As String In IO.Directory.GetFiles(directory, "*", IO.SearchOption.AllDirectories)
             'The next line of code gets only file extensions from searched directories and subdirectories
             Dim fName As String = IO.Path.GetExtension(filename)
             Dim fullpathfile As String = IO.Path.GetFullPath(filename)
@@ -29,7 +21,6 @@ Public Class SDBackup
         Call drawgamedatagrid()
 
         'Visible Options and text
-        CreateGameFolder.Visible = True
         Label6.Visible = True
         Button4.Visible = True
     End Sub
@@ -208,27 +199,31 @@ nextcell:
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Call verifytitleid()
 
-        For i = 0 To ListBox1.Items.Count - 1
-            ListBox1.SelectedIndex = i
-            Dim tempfilename As String = Path.GetFileName(ListBox1.Items(i))
+        For Each i In ListBox1.SelectedItems
+
+            'Preview
+            If Path.GetExtension(i) = ".mp4" Then
+                PreviewJPG.Hide()
+                PreviewMP4.Show()
+                PreviewMP4.URL = i
+                PreviewMP4.Ctlcontrols.play()
+            Else
+                PreviewMP4.Ctlcontrols.stop()
+                PreviewJPG.Show()
+                PreviewMP4.Hide()
+                PreviewJPG.Image = Image.FromFile(i)
+            End If
+
+            Dim tempfilename As String = Path.GetFileName(i)
             Dim DateOfFile As String = tempfilename.Substring(0, 8)
             Dim HourOfFile As String = tempfilename.Substring(8, 6)
             Dim positionofid As Integer = tempfilename.IndexOf("-")
             Dim tgameid As String = tempfilename.Substring(positionofid + 1)
             Dim gameid As String = tempfilename.Substring(positionofid + 1, Len(tgameid) - 4)
-            Dim FileToCopy As String = ListBox1.Items(i)
+            Dim FileToCopy As String = i
             Dim destinationtocopy As String
 
-
-            If CreateGameFolder.Checked = True And UseGameTitle.Checked = True Then
-                destinationtocopy = DestinationPath.Text & "\" & GameTitle.Text & "\" & tempfilename
-            ElseIf CreateGameFolder.Checked = True And UseGameTitle.Checked = False Then
-                destinationtocopy = DestinationPath.Text & "\" & gameid & "\" & tempfilename
-            ElseIf CreateGameFolder.Checked = False And UseGameTitle.Checked = True Then
-                destinationtocopy = DestinationPath.Text & tempfilename
-            ElseIf CreateGameFolder.Checked = False And UseGameTitle.Checked = False Then
-                destinationtocopy = DestinationPath.Text & tempfilename
-            End If
+            destinationtocopy = DestinationPath.Text & "\" & DateOfFile.Substring(0, 4) & "\" & DateOfFile.Substring(4, 2) & "\" & DateOfFile.Substring(6, 2) & "\" & Path.GetFileName(tempfilename)
 
             'Test if Directory Don't exist, create the GameID Folder
             If Not Directory.Exists(Path.GetDirectoryName(destinationtocopy)) Then
@@ -246,8 +241,7 @@ nextcell:
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        RecoverToSD.Show()
+        SDBackup.Show()
         Me.Close()
     End Sub
 End Class
-
