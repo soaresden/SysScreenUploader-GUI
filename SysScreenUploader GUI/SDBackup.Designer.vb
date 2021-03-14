@@ -343,7 +343,7 @@ Partial Class SDBackup
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(232, Byte), Integer), CType(CType(137, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.DarkCyan
         Me.ClientSize = New System.Drawing.Size(752, 587)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Button2)

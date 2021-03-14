@@ -57,6 +57,7 @@ Partial Class RecoverToSD
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label7.Location = New System.Drawing.Point(172, 55)
         Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
@@ -167,6 +168,7 @@ Partial Class RecoverToSD
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label1.Location = New System.Drawing.Point(558, 74)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
@@ -178,6 +180,7 @@ Partial Class RecoverToSD
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label2.Location = New System.Drawing.Point(652, 91)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
@@ -189,6 +192,7 @@ Partial Class RecoverToSD
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label3.Location = New System.Drawing.Point(464, 11)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
@@ -263,7 +267,7 @@ Partial Class RecoverToSD
         '
         'GroupBox2
         '
-        Me.GroupBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.GroupBox2.BackColor = System.Drawing.Color.LightSteelBlue
         Me.GroupBox2.Controls.Add(Me.GameTitle)
         Me.GroupBox2.Controls.Add(Me.GameIdGrid)
         Me.GroupBox2.Controls.Add(Me.Label11)
@@ -302,7 +306,7 @@ Partial Class RecoverToSD
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.DarkBlue
         Me.ClientSize = New System.Drawing.Size(753, 579)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.PictureBox1)

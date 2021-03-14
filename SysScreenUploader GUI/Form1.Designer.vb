@@ -69,7 +69,7 @@ Partial Class Form1
         '
         'GroupBox1
         '
-        Me.GroupBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(84, Byte), Integer), CType(CType(185, Byte), Integer))
+        Me.GroupBox1.BackColor = System.Drawing.Color.Thistle
         Me.GroupBox1.Controls.Add(Me.Label11)
         Me.GroupBox1.Controls.Add(Me.ExecuteButton)
         Me.GroupBox1.Controls.Add(Me.ListBox3)
@@ -100,10 +100,10 @@ Partial Class Form1
         '
         'ExecuteButton
         '
-        Me.ExecuteButton.Location = New System.Drawing.Point(264, 248)
+        Me.ExecuteButton.Location = New System.Drawing.Point(255, 247)
         Me.ExecuteButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ExecuteButton.Name = "ExecuteButton"
-        Me.ExecuteButton.Size = New System.Drawing.Size(83, 37)
+        Me.ExecuteButton.Size = New System.Drawing.Size(109, 37)
         Me.ExecuteButton.TabIndex = 22
         Me.ExecuteButton.Text = "Launch Server"
         Me.ExecuteButton.UseVisualStyleBackColor = True
@@ -206,7 +206,7 @@ Partial Class Form1
         '
         'GroupBox2
         '
-        Me.GroupBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(150, Byte), Integer), CType(CType(251, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.GroupBox2.BackColor = System.Drawing.Color.Ivory
         Me.GroupBox2.Controls.Add(Me.Label13)
         Me.GroupBox2.Controls.Add(Me.Label12)
         Me.GroupBox2.Controls.Add(Me.Label10)
@@ -222,7 +222,7 @@ Partial Class Form1
         Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.GroupBox2.Size = New System.Drawing.Size(295, 289)
+        Me.GroupBox2.Size = New System.Drawing.Size(307, 289)
         Me.GroupBox2.TabIndex = 21
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Editing the ConfigFile"
